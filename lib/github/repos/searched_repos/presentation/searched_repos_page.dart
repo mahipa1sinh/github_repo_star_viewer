@@ -6,7 +6,6 @@ import 'package:github_repo_viewer/core/presentation/routes/app_router.gr.dart';
 import 'package:github_repo_viewer/github/core/shared/providers.dart';
 import 'package:github_repo_viewer/github/repos/core/presentation/paginated_repos_list_view.dart';
 import 'package:github_repo_viewer/search/presentation/search_bar.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class SearchedReposPage extends ConsumerStatefulWidget {
   final String searchedTerm;

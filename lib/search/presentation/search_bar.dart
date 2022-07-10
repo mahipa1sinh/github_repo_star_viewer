@@ -15,13 +15,14 @@ class SearchBar extends ConsumerStatefulWidget {
   final void Function(String searchTerm) onShouldNavigateToResultPage;
   final void Function() onSignOutButtonPressed;
 
-  SearchBar({
+  const SearchBar({
+    Key? key,
     required this.body,
     required this.title,
     required this.hint,
     required this.onShouldNavigateToResultPage,
     required this.onSignOutButtonPressed,
-  });
+  }) : super(key: key);
 
   @override
   _SearchBarState createState() => _SearchBarState();

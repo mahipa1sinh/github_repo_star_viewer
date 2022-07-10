@@ -34,7 +34,7 @@ class LoadingRepoTile extends StatelessWidget {
             ),
           ),
         ),
-        leading: CircleAvatar(),
+        leading: const CircleAvatar(),
         trailing: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

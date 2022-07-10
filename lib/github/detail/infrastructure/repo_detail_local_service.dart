@@ -1,6 +1,5 @@
 import 'package:github_repo_viewer/core/infrastructure/sembast_database.dart';
 import 'package:github_repo_viewer/github/core/infrastructure/github_headers_cache.dart';
-import 'package:github_repo_viewer/github/detail/domain/github_repo_detail.dart';
 import 'package:github_repo_viewer/github/detail/infrastructure/github_repo_detail_dto.dart';
 import 'package:sembast/sembast.dart';
 import 'package:sembast/timestamp.dart';

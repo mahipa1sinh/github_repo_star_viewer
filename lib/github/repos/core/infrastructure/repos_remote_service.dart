@@ -5,7 +5,6 @@ import 'package:github_repo_viewer/core/infrastructure/remote_response.dart';
 import 'package:github_repo_viewer/github/core/infrastructure/github_headers.dart';
 import 'package:github_repo_viewer/github/core/infrastructure/github_headers_cache.dart';
 import 'package:github_repo_viewer/github/core/infrastructure/github_repo_dto.dart';
-import 'package:github_repo_viewer/github/core/infrastructure/pagination_config.dart';
 
 abstract class ReposRemoteService {
   final Dio _dio;

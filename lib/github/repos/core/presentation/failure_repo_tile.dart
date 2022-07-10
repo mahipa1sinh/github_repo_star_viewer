@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:github_repo_viewer/github/core/domain/github_failure.dart';
-import 'package:github_repo_viewer/github/core/shared/providers.dart';
 import 'package:github_repo_viewer/github/repos/core/presentation/paginated_repos_list_view.dart';
 
 class FailureRepoTile extends ConsumerWidget {

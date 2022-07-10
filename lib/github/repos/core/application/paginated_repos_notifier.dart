@@ -5,7 +5,6 @@ import 'package:github_repo_viewer/core/domain/fresh.dart';
 import 'package:github_repo_viewer/github/core/domain/github_failure.dart';
 import 'package:github_repo_viewer/github/core/domain/github_repo.dart';
 import 'package:github_repo_viewer/github/core/infrastructure/pagination_config.dart';
-import 'package:github_repo_viewer/github/repos/starred_repos/infrastructure/starred_repos_repository.dart';
 
 part 'paginated_repos_notifier.freezed.dart';
 

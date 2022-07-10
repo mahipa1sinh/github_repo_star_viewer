@@ -4,7 +4,7 @@ import 'package:github_repo_viewer/search/infrastructure/search_history_reposito
 class SearchHistoryNotifier extends StateNotifier<AsyncValue<List<String>>> {
   final SearchHistoryRepository _repository;
 
-  SearchHistoryNotifier(this._repository) : super(AsyncValue.loading());
+  SearchHistoryNotifier(this._repository) : super(const AsyncValue.loading());
 
   void watchSearchTerms({String? filter}) {
     _repository.watchSearchTerms(filter: filter).listen((data) {

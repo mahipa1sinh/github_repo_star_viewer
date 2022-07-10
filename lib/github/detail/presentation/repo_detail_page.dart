@@ -15,7 +15,7 @@ import 'package:url_launcher/url_launcher.dart' as url_launcher;
 
 class RepoDetailPage extends ConsumerStatefulWidget {
   final GithubRepo repo;
-  RepoDetailPage({
+  const RepoDetailPage({
     Key? key,
     required this.repo,
   }) : super(key: key);
@@ -123,8 +123,8 @@ class _RepoDetailPageState extends ConsumerState<RepoDetailPage> {
           initial: (_) => Container(),
           loadProgress: (_) => const Center(
             child: CircularProgressIndicator(
-                // color: Colors.black,
-                ),
+              color: Colors.black,
+            ),
           ),
           loadSuccess: (_) {
             if (_.repoDetail.entity == null) {

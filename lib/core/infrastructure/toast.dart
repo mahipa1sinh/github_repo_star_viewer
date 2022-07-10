@@ -1,7 +1,4 @@
-import 'dart:ui';
-
 import 'package:flash/flash.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 Future<void> showNoConnectionToast(
@@ -21,7 +18,7 @@ Future<void> showNoConnectionToast(
           padding: const EdgeInsets.all(8.0),
           child: Text(
             message,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white,
               fontSize: 14,
             ),

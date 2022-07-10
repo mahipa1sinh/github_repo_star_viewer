@@ -1,5 +1,4 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:github_repo_viewer/core/domain/fresh.dart';
 import 'package:github_repo_viewer/core/infrastructure/network_exceptions.dart';
 import 'package:github_repo_viewer/github/core/domain/github_failure.dart';

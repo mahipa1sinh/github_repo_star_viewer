@@ -8,7 +8,7 @@ class AuthorizationPage extends StatefulWidget {
   final Uri authorizationUrl;
   final void Function(Uri redirectUrl) onAuthorizationCodeRedirectAttempt;
 
-  AuthorizationPage({
+  const AuthorizationPage({
     Key? key,
     required this.authorizationUrl,
     required this.onAuthorizationCodeRedirectAttempt,
