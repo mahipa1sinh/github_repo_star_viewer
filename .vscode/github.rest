@@ -1,0 +1,40 @@
+@basseUrl = https://api.github.com
+@token = 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
+@acceptHeader = application/vnd.github.v3.html+json
+
+
+
+GET {{basseUrl}}/user/starred
+    ?page=1
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
+
+###
+
+GET {{basseUrl}}/search/repositories
+    ?q=mahipa1sinh.github.io
+    &page=1
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
+
+
+###
+
+GET {{basseUrl}}/repos/flutter/flutter/readme
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
+
+###
+PUT {{basseUrl}}/user/starred/mahipa1sinh/mahipa1sinh.github.io
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
+
+###
+DELETE {{basseUrl}}/user/starred/mahipa1sinh/mahipa1sinh.github.io
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
+
+###
+GET {{basseUrl}}/user/starred/mahipa1sinh/mahipa1sinh.github.io
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
