@@ -1,6 +1,8 @@
 import 'dart:convert';
+import 'dart:ui';
 
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flash/flash.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:github_repo_viewer/core/infrastructure/toast.dart';
@@ -25,6 +27,7 @@ class RepoDetailPage extends ConsumerStatefulWidget {
 }
 
 class _RepoDetailPageState extends ConsumerState<RepoDetailPage> {
+  bool wantToNavigate = true;
   @override
   void initState() {
     super.initState();
@@ -135,7 +138,7 @@ class _RepoDetailPageState extends ConsumerState<RepoDetailPage> {
             } else {
               return WebView(
                 javascriptMode: JavascriptMode.unrestricted,
-                navigationDelegate: (navReq) {
+                navigationDelegate: (navReq) async {
                   if (navReq.url.startsWith('data:')) {
                     return NavigationDecision.navigate;
                   } else {
