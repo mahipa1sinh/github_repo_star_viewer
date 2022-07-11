@@ -2,7 +2,7 @@
     package="com.example.github_repo_viewer">
     <uses-permission android:name="android.permission.INTERNET" />
    <application
-        android:label="github_repo_viewer"
+        android:label="Github Repo Gaze"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

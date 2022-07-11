@@ -35,6 +35,7 @@ class AppWidget extends ConsumerWidget {
         authenticated: (_) {
           appRouter.pushAndPopUntil(
             const StarredReposRoute(),
+            // const SplashRoute(),
             predicate: (route) =>
                 false, // msking sure user can't go back to splash page
           );
