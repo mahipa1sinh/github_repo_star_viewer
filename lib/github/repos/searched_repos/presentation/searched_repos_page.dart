@@ -57,7 +57,7 @@ class _SearchedReposPageState extends ConsumerState<SearchedReposPage> {
                 .getNextSearchedReposPage(widget.searchedTerm);
           },
           noResultsMessage:
-              "This is all we could find for your searched term.\nDo you even know what you want?...\nI mean you are just getting poop icon!!!",
+              "This is all we could find for your searched term.\nDo you even know what you want?",
         ),
       ),
     );
